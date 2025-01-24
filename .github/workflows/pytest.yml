@@ -4,17 +4,18 @@ on:
   pull_request: # プルリクエスト作成に実行
     branches:
       - main  # mainブランチへのプッシュでトリガー
-    paths:
-      - "**.py"  # Pythonファイルが変更された場合のみトリガー
+    # paths:
+    #   - "**.py"  # Pythonファイルが変更された場合のみトリガー
 
 jobs:
   test:
+    name: Python Tests
     runs-on: ubuntu-latest # GitHub Actionsで実行する環境を指定
 
     steps:
       # リポジトリをチェックアウト
       - name: Check out repository
-        uses: actions/checkout@v3ß
+        uses: actions/checkout@v3
 
       # Pythonをセットアップ
       - name: Set up Python
