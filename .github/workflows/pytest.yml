@@ -1,0 +1,37 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - main  # mainブランチへのプッシュでトリガー
+    paths:
+      - "**.py"  # Pythonファイルが変更された場合のみトリガー
+  pull_request:  # プルリクエスト作成時も実行
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # リポジトリをチェックアウト
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # Pythonをセットアップ
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'  # 必要なPythonのバージョンを指定
+
+      # 必要な依存関係をインストール
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ./app/requirements.txt
+
+      # pytestを実行
+      - name: Run pytest
+        run: |
+          pytest
