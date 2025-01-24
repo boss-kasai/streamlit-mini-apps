@@ -14,7 +14,7 @@ jobs:
     steps:
       # リポジトリをチェックアウト
       - name: Check out repository
-        uses: actions/checkout@v3ß
+        uses: actions/checkout@v3
 
       # Pythonをセットアップ
       - name: Set up Python
