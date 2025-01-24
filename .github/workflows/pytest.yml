@@ -4,8 +4,8 @@ on:
   pull_request: # プルリクエスト作成に実行
     branches:
       - main  # mainブランチへのプッシュでトリガー
-    paths:
-      - "**.py"  # Pythonファイルが変更された場合のみトリガー
+    # paths:
+    #   - "**.py"  # Pythonファイルが変更された場合のみトリガー
 
 jobs:
   test:
