@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st  # Streamlitライブラリをインポート
 from func import password_generator, uuid_generator
 
 
