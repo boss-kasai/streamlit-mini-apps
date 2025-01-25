@@ -1,4 +1,4 @@
-name: Run pytest
+name: Run pytest # ワークフローにはこれが表示される
 
 on:
   pull_request: # プルリクエスト作成に実行
@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Python Tests
+    name: Python Tests # ジョブ名.ブランチ保護のルールではジョブ名を指定することになるみたい
     runs-on: ubuntu-latest # GitHub Actionsで実行する環境を指定
 
     steps:
