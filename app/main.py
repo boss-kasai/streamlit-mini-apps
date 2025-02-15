@@ -112,12 +112,24 @@ def stopwatch_app():
     time_display.write(f"経過時間: {st.session_state.elapsed_time:.2f} 秒")
 
 
+# BMI計算アプリ
+def bmi_calculator_app():
+    st.title("BMI計算アプリ")
+    weight = st.number_input("体重(kg)", min_value=0.0, step=0.1)
+    height = st.number_input("身長(cm)", min_value=0.0, step=0.1)
+    if st.button("計算"):
+        height_m = height / 100
+        bmi = weight / (height_m**2)
+        st.write(f"あなたのBMIは{bmi:.2f}です。")
+
+
 # サイドバーでアプリを選択
 st.sidebar.title("アプリ切り替え")
 app_pages = {
     "UUID生成": uuid_generator_app,
     "パスワード生成": password_generator_app,
     "ストップウォッチ": stopwatch_app,
+    "BMI計算": bmi_calculator_app,
 }
 
 # サイドバーにリンク形式でページを表示
