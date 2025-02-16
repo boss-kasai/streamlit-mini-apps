@@ -1,0 +1,237 @@
+[
+    {
+      "code": 100,
+      "message": "Continue",
+      "description": "リクエストの初めの部分は受け取られ、クライアントはリクエストを継続して送信する必要があります。"
+    },
+    {
+      "code": 101,
+      "message": "Switching Protocols",
+      "description": "サーバーは、クライアントの要求に応じてプロトコルを切り替えています。"
+    },
+    {
+      "code": 102,
+      "message": "Processing",
+      "description": "サーバーはリクエストを受け取り、処理中ですが、まだ応答を返す準備ができていません。"
+    },
+    {
+      "code": 103,
+      "message": "Early Hints",
+      "description": "サーバーは最終的な応答を準備する前に、一部のヘッダー情報を先行して送信しています。"
+    },
+    {
+      "code": 200,
+      "message": "OK",
+      "description": "リクエストは正常に成功しました。"
+    },
+    {
+      "code": 201,
+      "message": "Created",
+      "description": "リクエストは成功し、新しいリソースが作成されました。"
+    },
+    {
+      "code": 202,
+      "message": "Accepted",
+      "description": "リクエストは受理されましたが、処理はまだ完了していません。"
+    },
+    {
+      "code": 203,
+      "message": "Non-Authoritative Information",
+      "description": "リクエストは成功しましたが、返される情報は他のソースから取得されたものです。"
+    },
+    {
+      "code": 204,
+      "message": "No Content",
+      "description": "リクエストは成功しましたが、返すコンテンツがありません。"
+    },
+    {
+      "code": 205,
+      "message": "Reset Content",
+      "description": "リクエストは成功し、クライアントは表示をリセットする必要があります。"
+    },
+    {
+      "code": 206,
+      "message": "Partial Content",
+      "description": "サーバーは部分的なリクエストを受け入れ、その部分のコンテンツを返しています。"
+    },
+    {
+      "code": 300,
+      "message": "Multiple Choices",
+      "description": "リクエストに対して複数の選択肢が存在し、ユーザーが選択する必要があります。"
+    },
+    {
+      "code": 301,
+      "message": "Moved Permanently",
+      "description": "リクエストしたリソースは恒久的に新しいURIに移動しました。"
+    },
+    {
+      "code": 302,
+      "message": "Found",
+      "description": "リクエストしたリソースは一時的に異なるURIにあります。"
+    },
+    {
+      "code": 303,
+      "message": "See Other",
+      "description": "リクエストしたリソースは他のURIで入手可能です。"
+    },
+    {
+      "code": 304,
+      "message": "Not Modified",
+      "description": "リクエストしたリソースは変更されていません。"
+    },
+    {
+      "code": 305,
+      "message": "Use Proxy",
+      "description": "リクエストしたリソースはプロキシを使用してアクセスする必要があります。"
+    },
+    {
+      "code": 307,
+      "message": "Temporary Redirect",
+      "description": "リクエストしたリソースは一時的に異なるURIにありますが、将来的には元のURIに戻る可能性があります。"
+    },
+    {
+      "code": 308,
+      "message": "Permanent Redirect",
+      "description": "リクエストしたリソースは恒久的に新しいURIに移動しました。"
+    },
+    {
+        "code": 400,
+        "message": "Bad Request",
+        "description": "サーバーはリクエストを理解できませんでした。"
+      },
+      {
+        "code": 401,
+        "message": "Unauthorized",
+        "description": "リクエストされたリソースへのアクセスには認証が必要です。"
+      },
+      {
+        "code": 403,
+        "message": "Forbidden",
+        "description": "サーバーはリクエストを拒否しています。"
+      },
+      {
+        "code": 404,
+        "message": "Not Found",
+        "description": "リクエストしたリソースが見つかりません。"
+      },
+      {
+        "code": 405,
+        "message": "Method Not Allowed",
+        "description": "リクエストに使用されたメソッドは許可されていません。"
+      },
+      {
+        "code": 406,
+        "message": "Not Acceptable",
+        "description": "リクエストしたリソースは、クライアントの受け入れ条件に合致しません。"
+      },
+      {
+        "code": 407,
+        "message": "Proxy Authentication Required",
+        "description": "このリクエストはプロキシ認証が必要です。"
+      },
+      {
+        "code": 408,
+        "message": "Request Timeout",
+        "description": "サーバーはリクエストの待機時間を超過しました。"
+      },
+      {
+        "code": 409,
+        "message": "Conflict",
+        "description": "リクエストはサーバーの現在の状態と競合しています。"
+      },
+      {
+        "code": 410,
+        "message": "Gone",
+        "description": "リクエストしたリソースは恒久的に削除され、利用できません。"
+      },
+      {
+        "code": 411,
+        "message": "Length Required",
+        "description": "リクエストにはContent-Lengthヘッダーが必要です。"
+      },
+      {
+        "code": 412,
+        "message": "Precondition Failed",
+        "description": "リクエストの前提条件がサーバーで失敗しました。"
+      },
+      {
+        "code": 413,
+        "message": "Payload Too Large",
+        "description": "リクエストのペイロードが大きすぎてサーバーが処理できません。"
+      },
+      {
+        "code": 414,
+        "message": "URI Too Long",
+        "description": "リクエストのURIが長すぎてサーバーが処理できません。"
+      },
+      {
+        "code": 415,
+        "message": "Unsupported Media Type",
+        "description": "リクエストのメディアタイプはサポートされていません。"
+      },
+      {
+        "code": 416,
+        "message": "Range Not Satisfiable",
+        "description": "リクエストされた範囲は満たせません。"
+      },
+      {
+        "code": 417,
+        "message": "Expectation Failed",
+        "description": "Expectリクエストヘッダーの要件が満たされていません。"
+      },
+      {
+        "code": 500,
+        "message": "Internal Server Error",
+        "description": "サーバー内部でエラーが発生し、リクエストを完了できませんでした。"
+      },
+      {
+        "code": 501,
+        "message": "Not Implemented",
+        "description": "サーバーはリクエストされた機能をサポートしていません。"
+      },
+      {
+        "code": 502,
+        "message": "Bad Gateway",
+        "description": "ゲートウェイまたはプロキシが不正なレスポンスを受け取りました。"
+      },
+      {
+        "code": 503,
+        "message": "Service Unavailable",
+        "description": "サーバーが一時的に利用できません（過負荷またはメンテナンス中）。"
+      },
+      {
+        "code": 504,
+        "message": "Gateway Timeout",
+        "description": "ゲートウェイまたはプロキシが上流のサーバーからの応答を受け取れませんでした。"
+      },
+      {
+        "code": 505,
+        "message": "HTTP Version Not Supported",
+        "description": "サーバーはリクエストされたHTTPバージョンをサポートしていません。"
+      },
+      {
+        "code": 506,
+        "message": "Variant Also Negotiates",
+        "description": "サーバーが適切にコンテンツネゴシエーションを処理できません。"
+      },
+      {
+        "code": 507,
+        "message": "Insufficient Storage",
+        "description": "サーバーはリクエストを完了するための十分なストレージを持っていません。"
+      },
+      {
+        "code": 508,
+        "message": "Loop Detected",
+        "description": "サーバーは無限ループを検出しました。"
+      },
+      {
+        "code": 510,
+        "message": "Not Extended",
+        "description": "リクエストには拡張機能が必要ですが、サーバーが対応していません。"
+      },
+      {
+        "code": 511,
+        "message": "Network Authentication Required",
+        "description": "ネットワーク認証が必要です（例: 公共Wi-Fiのログインページ）。"
+      }
+]
