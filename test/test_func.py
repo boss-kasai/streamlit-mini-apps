@@ -1,7 +1,7 @@
 import string
 import uuid
 
-from app.func import password_generator, uuid_generator
+from app.functions.func import password_generator, uuid_generator
 
 
 ## UUID生成関数のテスト
