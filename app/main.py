@@ -1,6 +1,7 @@
 import streamlit as st  # Streamlitライブラリをインポート
 from app_pages.bmi_calculator import bmi_calculator_app
 from app_pages.custom_hash_password import custom_hash_password_app
+from app_pages.date_calendar import date_calendar_app
 from app_pages.http_status_code_quiz import http_status_code_quiz_app
 from app_pages.password_generator import password_generator_app
 from app_pages.stopwatch import stopwatch_app
@@ -23,6 +24,7 @@ app_pages = {
     "BMI計算": bmi_calculator_app,
     "HTTPステータスコードクイズ": http_status_code_quiz_app,
     "カスタムハッシュパスワード生成": custom_hash_password_app,
+    "あの日まで何日？": date_calendar_app,
 }
 
 # サイドバーにリンク形式でページを表示
