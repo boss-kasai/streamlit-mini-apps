@@ -4,6 +4,7 @@ from app_pages.custom_hash_password import custom_hash_password_app
 from app_pages.date_calendar import date_calendar_app
 from app_pages.http_status_code_quiz import http_status_code_quiz_app
 from app_pages.password_generator import password_generator_app
+from app_pages.password_strength_check import password_strength_check_app
 from app_pages.stopwatch import stopwatch_app
 from app_pages.uuid_generator import uuid_generator_app
 
@@ -25,6 +26,7 @@ app_pages = {
     "HTTPステータスコードクイズ": http_status_code_quiz_app,
     "カスタムハッシュパスワード生成": custom_hash_password_app,
     "あの日まで何日？": date_calendar_app,
+    "パスワードの強度チェック": password_strength_check_app,
 }
 
 # サイドバーにリンク形式でページを表示
