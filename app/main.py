@@ -1,4 +1,5 @@
 import streamlit as st  # Streamlitライブラリをインポート
+from app_pages.addition_trainer import addition_trainer_app
 from app_pages.bmi_calculator import bmi_calculator_app
 from app_pages.custom_hash_password import custom_hash_password_app
 from app_pages.date_calendar import date_calendar_app
@@ -27,6 +28,7 @@ app_pages = {
     "カスタムハッシュパスワード生成": custom_hash_password_app,
     "あの日まで何日？": date_calendar_app,
     "パスワードの強度チェック": password_strength_check_app,
+    "算数練習(足し算)": addition_trainer_app,
 }
 
 # サイドバーにリンク形式でページを表示
