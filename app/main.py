@@ -6,6 +6,7 @@ from app_pages.date_calendar import date_calendar_app
 from app_pages.http_status_code_quiz import http_status_code_quiz_app
 from app_pages.password_generator import password_generator_app
 from app_pages.password_strength_check import password_strength_check_app
+from app_pages.pomodoro import pomodoro_timer_app
 from app_pages.stopwatch import stopwatch_app
 from app_pages.uuid_generator import uuid_generator_app
 
@@ -29,6 +30,7 @@ app_pages = {
     "あの日まで何日？": date_calendar_app,
     "パスワードの強度チェック": password_strength_check_app,
     "算数練習(足し算)": addition_trainer_app,
+    "ポモドーロタイマー": pomodoro_timer_app,
 }
 
 # サイドバーにリンク形式でページを表示
