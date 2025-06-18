@@ -1,4 +1,10 @@
+import sys
+from pathlib import Path
+
 import streamlit as st  # Streamlitライブラリをインポート
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))  # プロジェクトルートを追加
+
 from app_pages.addition_trainer import addition_trainer_app
 from app_pages.bmi_calculator import bmi_calculator_app
 from app_pages.custom_hash_password import custom_hash_password_app
