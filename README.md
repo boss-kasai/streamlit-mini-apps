@@ -30,3 +30,7 @@ pip freeze > ./app/requirements.txt
 ```bash
 streamlit run app/main.py
 ```
+# 端末での実行方法
+
+- 上記コマンドをターミナル（端末）で実行すると、WebブラウザでStreamlitアプリが起動します。
+- サーバーを停止したい場合は、ターミナルで `Ctrl+C` を押してください。

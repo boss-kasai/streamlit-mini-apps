@@ -10,6 +10,7 @@ from app_pages.bmi_calculator import bmi_calculator_app
 from app_pages.custom_hash_password import custom_hash_password_app
 from app_pages.date_calendar import date_calendar_app
 from app_pages.http_status_code_quiz import http_status_code_quiz_app
+from app_pages.interest_calculator import calculate_interest_growth_app
 from app_pages.password_generator import password_generator_app
 from app_pages.password_strength_check import password_strength_check_app
 from app_pages.pomodoro import pomodoro_timer_app
@@ -37,6 +38,7 @@ app_pages = {
     "パスワードの強度チェック": password_strength_check_app,
     "算数練習(足し算)": addition_trainer_app,
     "ポモドーロタイマー": pomodoro_timer_app,
+    "複利計算": calculate_interest_growth_app,
 }
 
 # サイドバーにリンク形式でページを表示
